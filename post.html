@@ -16,72 +16,68 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
-        <div><a class="navbar-brand" href="#"><h2>Reddigram</h2></a></div>
+        <div><a class="navbar-brand" href="#">
+                <h2>Reddigram</h2>
+            </a></div>
         <div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link" href="#">Contact</a>
-                  <a class="nav-item nav-link active" href="#">Post</a>
-                  <a class="nav-item nav-link" href="#">Logout</a>
+                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link active" href="#">Post</a>
+                    <a class="nav-item nav-link" href="#">Logout</a>
                 </div>
-              </div>
+            </div>
         </div>
-        
-      </nav>
+
+    </nav>
     <!-- END OF NAVIGATION -->
 
 
 
     <div class="jumbotron">
-        <h1 class="display-1 text-center">Post!</h1>
+        <h1 class="display-1 text-center">Share your post!</h1>
         <hr class="my-4">
         <div class="container">
             <div style="display:none">
                 <input type="text" id="this_user" value="{{userId}}" hidden>
             </div>
             <div class="container-fluid" id="main-container">
-                <section class="main-section">
+                <section class="main-section text-center">
                     <h1>Post a Reddigram for people to up-vote to the highest heavens or down-vote into oblivion.</h1>
                     <form id="contact-form" class="create-form">
+                        <h3 class="mt-5">Just add a link to your image and a caption below</h3>
                         <ul>
                             <li>
-                                <label for="caption">Caption</label>
-                                <input type="text" id="caption" placeholder="caption" required="required">
+                                <label for="image">Image</label>
+                                <input type="text" id="image_url" placeholder="  image url" required="required">
                             </li>
                             <li>
-                                <label for="image">Image</label>
-                                <input type="text" id="image_url" placeholder="image url" required="required">
+                                <label for="caption">Caption</label>
+                                <input type="text" id="caption" placeholder="  caption" required="required">
                             </li>
                         </ul>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
-    
-                     <!-- <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlFile1">You can also import an image from your device</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </form>  -->
-    
+
                 </section>
             </div>
         </div>
-      </div>
+    </div>
 
 
 
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-    <script src="/js/index.js"></script>
 </body>
 
 </html>
