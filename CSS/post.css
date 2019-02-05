@@ -1,14 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Lora%7CMontserrat');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat');
 
-body {
-  background-color: red;
+body,
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(248, 244, 202, 0.212);
 }
 
-navbar {
-  font-family: 'Montserrat', sans-serif;
-  color: red;
+.jumbotron {
+  background-color: rgb(67,129,182);
+  color: white;
+}
+
+hr {
+  background: white;
 }
 
 ul {
   list-style-type: none;
+}
+
+input {
+  border-radius: 1rem;
+  box-shadow: none;
+}
+
+.main-section h1 {
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+.btn-primary {
+  background-color: rgb(248, 244, 202);
+  border: none;
+  color: #004;
 }
