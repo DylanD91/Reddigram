@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Home</title>
 </head>
+
 <body>
-    
+
     <div class="container-fluid landingpage">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container navbarNavbar2">
@@ -36,41 +43,48 @@
 
     <!-- POSTS -->
     <div class="container-fluid text-center posts d-flex flex-column align-items-center m-5">
-       <div style="display: none">
-           <input type="text"  id="user_id" hidden value="{{thisUserId}}">
-       </div>
+        <div style="display: none">
+            <input type="text" id="user_id" hidden value="{{thisUserId}}">
+        </div>
         {{#if posts}}
-            {{#each posts}}
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="text-center">
-                        <h4>{{this.author}}</h4>
-                        <div class="description">
-                                                 {{this.body}}
-                        </div>
-                            <div class="row photos-wrap">
-                            <!-- Instafeed target div -->
-                                <div id="instafeed"></div>
-                                <!-- The following HTML will be our template inside instafeed -->
-                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="photo-box">
-                                            <div class="image-wrap">
-                                            <img src="{{this.image}}">
-                                            </div>
-                                        
-                                    </div>
-                                    
+        {{#each posts}}
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center">
+                    <h4>{{this.author}}</h4>
+                    <div class="description">
+                        {{this.body}}
+                    </div>
+                    <div class="row photos-wrap">
+                        <!-- Instafeed target div -->
+                        <div id="instafeed"></div>
+                        <!-- The following HTML will be our template inside instafeed -->
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="photo-box">
+                                <div class="image-wrap">
+                                    <img src="{{this.image}}">
                                 </div>
+
                             </div>
+
                         </div>
-                            <i class="fas fa-arrow-up like" data-post_id="{{this.id}}" id='{{this.id}}-up'></i>&nbsp;&nbsp;
-                            <span>{{this.vote}}</span>&nbsp;&nbsp;
-                            <i class="fas fa-arrow-down dislike" data-post_id="{{this.id}}"  id="{{this.id}}-down"></i>
                     </div>
                 </div>
-            {{/each}}
+                <i class="fas fa-arrow-up like" data-post_id="{{this.id}}" id='{{this.id}}-up'></i>&nbsp;&nbsp;
+                <span>{{this.vote}}</span>&nbsp;&nbsp;
+                <i class="fas fa-arrow-down dislike" data-post_id="{{this.id}}" id="{{this.id}}-down"></i>
+            </div>
+        </div>
+        {{/each}}
         {{/if}}
-    </div> 
-    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
 </body>
+
 </html>
