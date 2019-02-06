@@ -1,6 +1,9 @@
 body {
   background-image: url(images/geometric-mountains-blue-nursery-plain.jpg);
-  background-image: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
 }
 photo-box {
   border: solid;
