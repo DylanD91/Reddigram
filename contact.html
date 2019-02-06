@@ -9,63 +9,99 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
     <title>Contact</title>
 </head>
 
 <body>
-
+    <!-- NAVIGATION -->
     <div class="container-fluid landingpage">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container navbarNavbar2">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand js-scroll-trigger animated heartBeat" href="#page-top">RED-DI-A-GRAM</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" style="color:black;"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="/home/{{userId}}">Home</a>
+                            <a class="nav-link js-scroll-trigger" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="/submit/{{userId}}">Post</a>
+                            <a class="nav-link js-scroll-trigger" href="submit.html">Post</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="/logout">Log Out</a>
+                            <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
+    <!-- END OF NAVIGATION -->
+
+    <!-- Contact Page -->
+    <div class="container-fluid contact" id="contactPage">
+
+        <form>
+            <h3 class="text-center">Contact</h3><br>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+                <div class="col-3"></div>
+
+            </div><br>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Organization">
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Designation">
+                </div>
+                <div class="col-3"></div>
+            </div><br>
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Phone number(optional)">
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-3"></div>
+            </div><br>
+
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 text-center">
+                    <div class="form-group">
+                        <label for="message">Send a message</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <button type="submit" class="btn btn-dark" data-aos="zoom-in" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </form>
     </div>
 
-    <div id="main-container" class="container">
 
-        <section class="main-section">
-            <h1>Reddi A Gram: </h1>
-
-            <form id="contact-form">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                    </li>
-                    <li>
-                        <label for="email">Email:</label>
-                        <input type="email" id="subject" name="email" placeholder="subject" required="required">
-                    </li>
-                    <li>
-                        <label for="message">Message:</label>
-                        <input id="message" name="message" required="required"></textarea>
-                    </li>
-                </ul>
-                <input type="submit">
-            </form>
-
-        </section>
-
+    <div class="container-fluid connect">
+        <h3 class="text-center connectHeader">Connect</h3>
+        <div class="col-12 text-center social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

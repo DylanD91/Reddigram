@@ -9,32 +9,79 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="/CSS/login.css">
+    <link rel="stylesheet" href="./CSS/login.css">
     <title>Login</title>
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="kpx_login">
-            <h3 class="kpx_authTitle">Login</h3>
-            <div class="row kpx_row-sm-offset-3 kpx_socialButtons t">
-                <div class="col-sx-1 col-sm-1 col-md-1 col-lg-1"></div>
-                <div class="col-xs-4 col-sm-4">
-                    <a href="/auth/google" class="btn btn-lg btn-block kpx_btn-google-plus" data-toggle="tooltip"
-                        data-placement="top" title="Google Plus">
-                        <i class="fab fa-google-plus-square"></i>
-                        <span class="hidden-xs"></span>
-                    </a>
-                </div>
-            </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Reddigram</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <p style="margin-right:20px;">Welcome
+                </p>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="/users/logout">Logout</a>
+                </button>
+            </form>
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-            crossorigin="anonymous"></script>
-        <script src="/js/index.js"></script>
+    </nav>
+
+    <div class=" row contianer-fluid postContainer ">
+            <div class=" col-lg-6 col-md-6 col-sm-12 postHeader">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/pack_880806-sticker_4-xxxhdpi-v2.gif"
+                    style="width:300px;height:300px;">
+                <h1 class="text-center">Create your post here</h1>
+            </div>
+
+        <div class=" col-lg-6 col-md-6 col-sm-12 container-fluid postForm ">
+            <form action="/posts" method="POST">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Author</label>
+                    <input type="text" name="author" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Author">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Image</label>
+                    <input type="text" name="image" class="form-control" id="exampleInputPassword1" placeholder="Image">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Image</label>
+                    <input type="text" name="image" class="form-control" id="exampleInputPassword1" placeholder="Image">
+                </div>
+                <div class="form-group shadow-textarea">
+                    <label for="exampleFormControlTextarea6">Type your content here</label>
+                    <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>

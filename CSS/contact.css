@@ -1,185 +1,340 @@
-#mainNav {
-    background: #00c3ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ffff1c, #00c3ff) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    !important;
-    }
-    *{
-      margin:0;
-      padding:0;
-    }
-    
-    img {
-      width: 20em;
-      height: 12em;
-    }
-    
-    .landingpage{
-      height: 65vh;
-      width: 100%;
-      background:url(https://i.gifer.com/6M8G.gif);
-      background-size: cover;
-      background-position-x: 20px;
-      background-position-y: -70px;
-    }
-    
-    .landingpageP{
-      height: 65vh;
-      width: 100%;
-      background:url(https://www.valuecoders.com/blog/wp-content/uploads/2017/12/chatbots-AI.gif);
-      background-size: cover;
-      background-position-x: 20px;
-      background-position-y: -70px;
-    }
-    .navbarNavbar2 a{
-      color: rgb(0, 0, 0) !important;
-    }
-    .navbarNavbar2 ul li{
-      color: white !important;
-    }
-    
-    #mainNav{
-      background: white;
-      color: black;
-    }
-    
-    #contact-form ul {
-      margin-bottom: 20px;
-    }
-    
-    #contact-form li {
-      margin-bottom: 10px;
-    }
-    
-    label,
-    input[type=text],
-    input[type=email],
-    textarea {
-      display: block;
-      width: 100%;
-    }
-    
-    input[type=text],
-    input[type=email],
-    textarea {
-      height: 35px;
-      padding: 0 10px;
-      font-size: 14px;
-      border: 1px solid #dddddd;
-    }
-    
-    textarea {
-      height: 200px;
-    }
-    
-    input[type=submit] {
-      padding: 10px 30px;
-      font-size: 18px;
-      color: #ffffff;
-      cursor: pointer;
-      background: #4aaaa5;
-      border: 0 none;
-    }
-    
-    a.button {
-      -webkit-appearance: button;
-      -moz-appearance: button;
-      appearance: button;
-      text-decoration: none;
-      color: initial;
-    }
-    /*
-        @hiercelik - hiercelik.net
-        @koalapix - koalapix.com
-    */
-    @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
-    @import url(http://fonts.googleapis.com/css?family=Titillium+Web&subset=latin,latin-ext);
-    @media (min-width: 768px) {
-        .kpx_row-sm-offset-3 div:first-child[class*="col-"] {
-            margin-left: 25%;
-        }
-    }
-    body {
-        font-family: 'Titillium Web', sans-serif; 
-    }
-    a{
-        color:#ff5400;
-    }
-    a:hover {
-        opacity: 0.8;
-        color:#ff5400;
-        text-decoration:none;
-    }
-    .kpx_login .kpx_authTitle {
-        text-align: center;
-        line-height: 300%;
-    }
-        
-    .kpx_login .kpx_socialButtons a {
-        color: white; 
-        opacity:0.9;
-    }
-    .kpx_login .kpx_socialButtons a:hover {
-        color: white;
-        opacity:1;    	
-    }
-    .kpx_login .kpx_socialButtons .kpx_btn-google-plus {background: #c32f10; -webkit-transition: all 0.5s ease-in-out;
-         -moz-transition: all 0.5s ease-in-out;
-           -o-transition: all 0.5s ease-in-out;
-              transition: all 0.5s ease-in-out;}
-    .kpx_login .kpx_socialButtons .kpx_btn-google-plus:hover {background: #6b1301}
-    .kpx_login .kpx_socialButtons .kpx_btn-google-plus:focus {background: #fff; color: #c32f10; border-color: #c32f10}
-    @media (min-width: 768px) {
-        .kpx_login .kpx_forgotPwd {
-            text-align: right;
-            margin-top:10px;
-         }		
-    }
-    .instagram-wrap {
-      background: $lightgrey;
-    }
-    
-    .instagram-content {
-      h3 {
-          text-transform: uppercase;
-          letter-spacing: 0.5em;
-          font-size: 12px;
-          font-weight: 700;
-          text-align: center;
-          padding: $padding*5 0;
-          color: darken($lightgrey, 20%);
-      }
-    
-    }
-    .photo-box {
-      margin: 0 0 $margin*3 0;
-    
-      .image-wrap {
-          img {
-              width: 100%;
-          }
-    
-          .likes {
-              position: absolute;
-              bottom: 5px;
-              left: 15px;
-              padding: $padding/2;
-              background: $black;
-              background: rgba($black, 0.4);
-              color: $white;
-          }
-      }
-      .description {
-          font-family: $sub-font;
-          font-size: 12px;
-          background: $white;
-          color: $mediumgrey;
-          letter-spacing: 1px;
-          padding: $padding*1.5;
-          height: 75px;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-      }
-    }
-    
+/* Html and body settings */
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html,body{
+  scroll-behavior: smooth;
+}
+
+/* End of Html and body settings */
+
+
+/* Landing Page/ Navbar */
+
+
+.imageLogo{
+ background-blend-mode: color;
+ overflow: hidden;
+ animation-name:imagePlay; 
+ animation-duration: 1.5s;
+}
+
+@keyframes imagePlay{
+  from{
+      transform: translateX(-2000px);
+  }
+  to{
+      transform:translateX(0px);
+  }
+}
+
+.title{
+  overflow: hidden;
+}
+.title h3,p {
+  overflow:hidden;
+  animation-name:textDisp;
+}
+
+@keyframes textDisp{
+  from{
+      transform: translateX(-2000px);
+  }
+  to{
+      transform: translateX(0px);
+  }
+}
+a{
+  display: none;
+  color: black;
+}
+
+.navbar{
+  background-blend-mode: inherit;
+}
+
+#getStarted{
+ background: transparent important;
+  width: 160px;
+  border-radius: 10px;
+  height: 40px;
+  overflow-y: hidden;
+
+}
+/* End of Landing Page/ Navbar */
+
+
+/* Contact Page */
+.contact{
+  background-size:cover ;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  background: url(https://ak2.picdn.net/shutterstock/videos/940882/thumb/1.jpg?ip=x480) no-repeat;
+  background-size: cover;
+}
+
+.form-control{
+  background: transparent !important;
+  border: none !important ;
+  border-bottom: 1px solid black !important;
+  outline: none !important;
+  width: 40rem ;
+  overflow: hidden;
+  line-height: 20px;
+  overflow: hidden !important;
+}
+
+.form-group{
+  overflow: hidden;
+}
+
+#submitBtn{
+  margin-top:50px;
+  color: rgb(0, 0, 0);
+  background: transparent;
+  font-weight: 500;
+  width: 150px;
+  animation-name: submit;
+  animation-duration: 1s;
+  overflow: hidden;
+}
+
+/* @keyframes submit{
+  from{
+      transform: translateY(1000px);
+      overflow:hidden;
+  }
+  to{
+      transform: translatey(0px);
+      overflow:hidden;
+
+  }
+} */
+
+#submitBtn:hover{
+  background: black;
+  color: white;
+  transform: translateX(30px);
+  overflow: hidden;
+}
+
+#comment{
+  border-top:1px solid black;
+  overflow: hidden;
+}
+
+.contact h3 {
+  overflow: hidden;
+}
+
+.connect{
+  height: 20vh;
+  padding: 10px;
+  background: rgb(253, 244, 244);
+  border-top: 1px solid black;    
+  overflow: hidden;
+}
+
+.connectHeader{
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.social i{
+  font-size: 55px;
+  overflow: hidden;
+  padding-left: 4rem;
+  padding-top: 1.5rem;
+  overflow: hidden;
+}
+
+/* End of Contact Page */
+
+
+/* .parallaxSection{
+  background: url(https://www.gobalo.es/blog/wp-content/uploads/2017/08/cabecera-procesos-creativos-768x341.jpg);
+  background-size: cover center ;
+  background-attachment: fixed;
+  height: calc(100vh - 56px);
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.parallax{
+  width: 100%;
+  background: url(http://www.yukokusamurai.com/data/archive/img/1907055729.jpeg);
+  color: rgb(15, 15, 15);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arvo', serif;
+} */
+
+.parallax{
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.div1{
+  background: rgb(255,255,255);
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;  
+  overflow: hidden;
+}
+
+.div1 h3{
+  overflow: hidden;
+}
+.div2{
+  background: url(http://jmplacementsolutions.com/wp-content/uploads/2017/12/it-1920x1080.png);
+  height: 40vh;
+  background-size: cover center ;
+  background-attachment: fixed;
+}
+
+/* End of Parallax Section */
+
+
+/* Portfolio Section */
+.portfolio{
+  width: 100%;
+  height: 100vh;
+  border: 2px solid black;
+  overflow: hidden;
+  background:linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 130, 228, 0.329)) ;
+}
+
+.box-container{
+  border: 2px solid black;
+  width: 100%;
+  display: grid;
+  font-size: 40px;
+  grid-template-columns: repeat(2,400px) ;
+  grid-template-rows: repeat(4,200px);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  overflow: hidden;
+  justify-content: end;
+  align-content: bottom;
+}
+
+
+.box{
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  margin: 20px 20px;
+  overflow: hidden;
+}
+
+@keyframes header{
+
+  0%{
+      transform: translateY(0);
+
+  }
+  100%{
+      transform: translateY(35vh);
+
+  }
+}
+/* End of Portfolio Section */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+#mainNav{
+  font-weight: 500;
+  box-shadow: 1px 1px  #c8c8c89d;
+}
+
+.heartBeat {
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+}
+
+.nav-item:hover{
+  background: rgb(250, 233, 197);
+}
+
+  .nav-item{
+    display:inline-block;
+    text-align:center;
+}
+
+a:hover {
+    font-weight:bold;
+}
+a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+img {
+  width: 20em;
+  height: 12em;
+}
+
+/* LANDING PAGE */
+/* .landingpage{
+  height: 55vh;
+  width: 100%;
+  border: 1px solid;
+  box-shadow: 7px 7px  #dfdede;
+  background:url(https://images.thoughtbot.com/blog+animations/animation-direction.gif);
+  background-size: cover;
+  background-position-x: 20px;
+  background-position-y: -450px;
+  background-attachment: fixed;
+} */
+
+.landingpageP{
+  height: 70vh;
+  width: 100%;
+  background:url(https://www.valuecoders.com/blog/wp-content/uploads/2017/12/chatbots-AI.gif);
+  background-size: cover;
+  background-position-x: 20px;
+ 
+}
+.landingpageC{
+  height: 65vh;
+  width: 100%;
+  background:url(http://www.shrishishubhawan.com/assets/images/shishu_contact/shishu_contact.gif);
+  background-size: cover;
+  background-position-x: 80px;
+  background-position-y: 70px;
+}
+
+.funStuff{
+ position: absolute;
+ top: 70%;
+  width:flex;
+  font-family: 'Noto Serif SC', serif;
+}
+/* END OF LANDING PAGE */
