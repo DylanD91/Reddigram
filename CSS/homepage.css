@@ -1,8 +1,11 @@
 body {
-  background-image: url(images/images.jpg);
+  background-image: url(images/geometric-mountains-blue-nursery-plain.jpg);
   background-image: no-repeat;
 }
-
+photo-box {
+  border: solid;
+  border-width: 5px;
+}
 mainNav{
   background: white;
   color: black;
