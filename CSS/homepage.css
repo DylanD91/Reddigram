@@ -17,7 +17,7 @@ photo-box {
   font-weight: 500;
   /* box-shadow: 1px 1px  #c8c8c89d; */
   font-family: 'Montserrat', sans-serif;
-  font: rgb(0, 0, 0); 
+  color: rgba(0, 0, 0, 0.89); 
   background: white;
 }
 
