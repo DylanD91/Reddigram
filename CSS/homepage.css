@@ -12,6 +12,7 @@ photo-box {
 
 #page-top{
   color: black;
+  font-weight: 300;
 }
 #mainNav{
   font-weight: 500;
@@ -31,10 +32,23 @@ photo-box {
     text-align:center;
 }
 
+a:hover {
+    font-weight:bold;
+}
+/* .nav-item:hover a{
+  background: rgb(213,241,255);
+  color: black !important;
+}
+
+  .nav-item{
+    display:inline-block;
+    text-align:center;
+}
+
     *{
       margin:0;
       padding:0;
-    }
+    } */
     
     img {
       width: 20em;
