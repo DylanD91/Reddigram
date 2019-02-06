@@ -9,13 +9,12 @@ photo-box {
   border: solid;
   border-width: 15px;
 }
-mainNav{
-  background: white;
-  color: black;
+#mainNav{
   font-weight: 500;
   box-shadow: 1px 1px  #c8c8c89d;
   font-family: 'Montserrat', sans-serif;
-  font: black;
+  font: black; 
+  background: white;
 }
 
 .nav-item:hover a{
