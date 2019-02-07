@@ -19,22 +19,22 @@ photo-box {
   /* box-shadow: 1px 1px  #c8c8c89d; */
   font-family: 'Montserrat', sans-serif;
   color: rgba(0, 0, 0, 0.89); 
-  background: white;
+  background: black;
 }
-
+/* 
 .nav-item:hover a{
   background: rgb(213,241,255);
   color: black !important;
-}
+} */
 
   .nav-item{
     display:inline-block;
     text-align:center;
 }
 
-a:hover {
+/* a:hover {
     font-weight:bold;
-}
+} */
 /* .nav-item:hover a{
   background: rgb(213,241,255);
   color: black !important;
