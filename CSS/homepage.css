@@ -1,5 +1,5 @@
 body {
-  background-image: url(images/geometric-mountains-blue-nursery-plain.jpg);
+  background-image: url(images/light\ blue\ mountains.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -8,6 +8,7 @@ body {
 photo-box {
   border: solid;
   border-width: 15px;
+  background-color: white;
 }
 
 #page-top{
