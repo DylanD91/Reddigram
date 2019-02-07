@@ -1,7 +1,7 @@
 # *The Reddigram Testpages*
 
 ## About
-A test repository used to test the Reddigram project webpage styleing to get correct look.
+A repository used to test the Reddigram project styling before transitioning to ejs or handlebars.
 
 ## Tech contained in files
    * Html

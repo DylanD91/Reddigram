@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
 
 body,
 .navbar {
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgba(248, 244, 202, 0.212);
+  font-family: 'Roboto Slab', serif;
+  /* background-color: rgba(248, 244, 202, 0.212); */
+  background-image: url("images/mountain.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(10, 7, 53);
 }
 
 .jumbotron {
-  background-color: rgb(67,129,182);
-  color: white;
+  background-color: rgb(201, 204, 206);
+  opacity: .8;
+  border-radius: 3%;
+}
+
+#main-container {
+  opacity: 100%;
+  color: black;
 }
 
 hr {
@@ -25,12 +36,12 @@ input {
 }
 
 .main-section h1 {
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
 }
 
 .btn-primary {
-  background-color: rgb(248, 244, 202);
+  background-color: yellow;
   border: none;
   color: #004;
 }
