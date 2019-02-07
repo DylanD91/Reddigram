@@ -1,16 +1,20 @@
 body {
-  background-image: url(images/light\ blue\ mountains.jpeg);
+  background-image: url(images/geometric-mountains-blue-nursery-plain.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
 }
+
+
 photo-box {
   border: solid;
   border-width: 15px;
   background-color: white;
 }
-
+instafeed {
+  background: white;
+}
 #page-top{
   color: black;
   font-weight: 300;
