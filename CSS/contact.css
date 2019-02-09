@@ -16,29 +16,7 @@
       margin:0;
       padding:0;
     }
-    
-    img {
-      width: 20em;
-      height: 12em;
-    }
-    
-    .landingpage{
-      height: 65vh;
-      width: 100%;
-      background:url(https://i.gifer.com/6M8G.gif);
-      background-size: cover;
-      background-position-x: 20px;
-      background-position-y: -70px;
-    }
-    
-    .landingpageP{
-      height: 65vh;
-      width: 100%;
-      background:url(https://www.valuecoders.com/blog/wp-content/uploads/2017/12/chatbots-AI.gif);
-      background-size: cover;
-      background-position-x: 20px;
-      background-position-y: -70px;
-    }
+   
     .navbarNavbar2 a{
       color: rgb(0, 0, 0) !important;
     }
@@ -64,7 +42,7 @@
     input[type=email],
     textarea {
       display: block;
-      width: 100%;
+      width: 50%;
     }
     
     input[type=text],
