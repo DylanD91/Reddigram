@@ -73,31 +73,34 @@ a::after {
 
 img{
 margin:0px 300px;
-}
-
-.imgForm{
-  margin:auto;
+box-shadow: 5px 5px 5px rgba(173, 173, 173, 0.616) !important;
 
 }
-.form-control{
-  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.616);
+
+
+.form-control {
+  width: 500px !important;
+  box-shadow: 5px 5px 5px rgba(173, 173, 173, 0.616) !important;
 }
 
 .loginBtn{
-  background: rgb(48,79,146);
-  color: white;
+  background: rgb(48,79,146) !important;
+  color: white !important;
   border: 1px solid;
-  box-shadow: 5px 5px 5px #dfdede;
+  box-shadow: 5px 5px 5px #70707078 ;
   width:200px;
 }
 
 .loginBtn:hover{
-  background: rgb(213,241,255);
-  color: black;
+  background: rgb(213,241,255) !important;
+  color: black !important;
   border: 1px solid;
   box-shadow: 5px 5px  #dfdede;
 }
 
 .formPage{
   background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
 }
+

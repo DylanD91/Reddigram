@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/login.css">
-    <title>Login</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
-
+    <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Reddigram</a>
+        <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,63 +26,189 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Post</a>
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
-
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <p style="margin-right:20px;">Welcome
-                </p>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="/users/logout">Logout</a>
-                </button>
-            </form>
+
         </div>
     </nav>
+    <!-- END OF NAVIGATION -->
 
-    <div class=" row contianer-fluid postContainer ">
-            <div class=" col-lg-6 col-md-6 col-sm-12 postHeader">
-                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/pack_880806-sticker_4-xxxhdpi-v2.gif"
-                    style="width:300px;height:300px;">
-                <h1 class="text-center">Create your post here</h1>
+    <div class="container all">
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <section class="post-heading">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <div class="media">
+                                    <div class="media-left text-center">
+                                        <a href="#">
+                                            <!-- <img class="media-object photo-profile"
+                                                src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g"
+                                                width="40" height="40" alt="..."> -->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#" class="anchor-username">
+                                            <h4 class="media-heading">Syed</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="post-body">
+                        <img src="https://images.unsplash.com/photo-1535498730771-e735b998cd64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                            alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                            turpis sem, dictum id bibendum eget, malesuada ut massa. Ut scel
+                            erisque nulla sed luctus dapibus. Nulla sit amet mi vitae purus sol
+                            licitudin venenatis. Praesent et sem urna. Integer vitae lectus nis
+                            l. Fusce sapien ante, tristique efficitur lorem et, laoreet ornare lib
+                            ero. Nam fringilla leo orci. Vivamus semper quam nunc, sed ornare magna dignissim sed. Etiam
+                            interdum justo quis risus
+                            efficitur dictum. Nunc ut pulvinar quam. N
+                            unc mollis, est a dapibus dignissim, eros elit tempor diam, eu tempus quam felis eu velit.
+                        </p>
+                    </section>
+                    <section class="post-footer">
+                        <hr>
+                        <div class="post-footer-option container">
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i> Like</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Comment</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-share-alt"></i> Share</a></li>
+                            </ul>
+                        </div>
+                        <div class="post-footer-comment-wrapper">
+                            <div class="comment-form">
+
+                            </div>
+                            <div class="comment">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <!-- <img class="media-object photo-profile"
+                                                src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g"
+                                                width="32" height="32" alt="..."> -->
+                                        </a>
+                                    </div>
+                                    <!-- <div class="media-body">
+                                        <a href="#" class="anchor-username">
+                                            <h4 class="media-heading">Media heading</h4>
+                                        </a>
+                                        <a href="#" class="anchor-time">51 mins</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-
-        <div class=" col-lg-6 col-md-6 col-sm-12 container-fluid postForm ">
-            <form action="/posts" method="POST">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Author</label>
-                    <input type="text" name="author" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Author">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Image</label>
-                    <input type="text" name="image" class="form-control" id="exampleInputPassword1" placeholder="Image">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Image</label>
-                    <input type="text" name="image" class="form-control" id="exampleInputPassword1" placeholder="Image">
-                </div>
-                <div class="form-group shadow-textarea">
-                    <label for="exampleFormControlTextarea6">Type your content here</label>
-                    <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <script src="/js/index.js"></script>
+    <div class="container all">
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <section class="post-heading">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <div class="media">
+                                    <div class="media-left text-center">
+                                        <a href="#">
+                                            <!-- <img class="media-object photo-profile"
+                                                src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g"
+                                                width="40" height="40" alt="..."> -->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#" class="anchor-username">
+                                            <h4 class="media-heading">Syed</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <a href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="post-body">
+                        <img src="https://images.unsplash.com/photo-1535498730771-e735b998cd64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                            alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                            turpis sem, dictum id bibendum eget, malesuada ut massa. Ut scel
+                            erisque nulla sed luctus dapibus. Nulla sit amet mi vitae purus sol
+                            licitudin venenatis. Praesent et sem urna. Integer vitae lectus nis
+                            l. Fusce sapien ante, tristique efficitur lorem et, laoreet ornare lib
+                            ero. Nam fringilla leo orci. Vivamus semper quam nunc, sed ornare magna dignissim sed. Etiam
+                            interdum justo quis risus
+                            efficitur dictum. Nunc ut pulvinar quam. N
+                            unc mollis, est a dapibus dignissim, eros elit tempor diam, eu tempus quam felis eu velit.
+                        </p>
+                    </section>
+                    <section class="post-footer">
+                        <hr>
+                        <div class="post-footer-option container">
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i> Like</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Comment</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-share-alt"></i> Share</a></li>
+                            </ul>
+                        </div>
+                        <div class="post-footer-comment-wrapper">
+                            <div class="comment-form">
+
+                            </div>
+                            <div class="comment">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <!-- <img class="media-object photo-profile"
+                                                src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g"
+                                                width="32" height="32" alt="..."> -->
+                                        </a>
+                                    </div>
+                                    <!-- <div class="media-body">
+                                        <a href="#" class="anchor-username">
+                                            <h4 class="media-heading">Media heading</h4>
+                                        </a>
+                                        <a href="#" class="anchor-time">51 mins</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
+
+<!------ Include the above in your HEAD tag ---------->
