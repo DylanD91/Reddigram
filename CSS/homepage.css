@@ -12,11 +12,19 @@ body {
 }
 
 .image-wrap {
-display: block;
+  background: white;
+  display: block;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: solid;
+  border-width: 1px;
+}
+/* .image-wrap {
+/* display: block;
 margin-left: 100px;
 margin-right: 100px;
 width: 100%;
 background: white;
 border: solid;
-border-width: 1px;
-}
+border-width: 1px; */
+/* } */ 
