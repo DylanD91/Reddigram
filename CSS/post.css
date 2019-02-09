@@ -5,16 +5,20 @@ body,
 .navbar {
   font-family: 'Roboto Slab', serif;
   /* background-color: rgba(248, 244, 202, 0.212); */
-  background-image: url("images/mountain.gif");
+  background-image: url("images/forest.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(10, 7, 53);
 }
 
+navbar-nav > a:hover {
+  color: yellow;
+  padding: yellow;
+}
+
+
 .jumbotron {
-  background-color: rgb(201, 204, 206);
-  opacity: .8;
-  border-radius: 3%;
+  background-color: rgba(0, 0, 0, .001);
 }
 
 #main-container {
@@ -31,8 +35,13 @@ ul {
 }
 
 input {
-  border-radius: 1rem;
   box-shadow: none;
+  width: 50%;
+  height: 25px;
+  padding: 20px;
+  margin: 5px;
+  border: solid 1px grey;
+  text-align: center;
 }
 
 .main-section h1 {
@@ -41,7 +50,18 @@ input {
 }
 
 .btn-primary {
-  background-color: yellow;
+  background-color: rgb(1, 94, 6);
   border: none;
-  color: #004;
+  color:white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: rgb(48, 47, 47)
+}
+
+input::placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, .5);
+  font-style: italic;
 }
