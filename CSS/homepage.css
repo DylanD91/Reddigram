@@ -18,6 +18,8 @@ body {
   margin-right: 200px;
   border: solid;
   border-width: 1px;
+  background-size: 100%;
+
 }
 /* .image-wrap {
 /* display: block;
