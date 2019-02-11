@@ -1,4 +1,3 @@
-/*-- Global Selectors --*/
 a{
   color:#47649F;
 }
@@ -6,14 +5,14 @@ a{
 body{
   font-family:'helvetica';
   /* background: url(https://wearenolte.com/wp-content/uploads/2018/01/Freelancer-or-Agency-Contractor.png); */
-  background: url(https://s3.amazonaws.com/wordpress-production/wp-content/uploads/2014/10/Onboarding-Virtual-Employees.png);
-  background-size: cover;   
+  /* background: url(https://s3.amazonaws.com/wordpress-production/wp-content/uploads/2014/10/Onboarding-Virtual-Employees.png); */
+  /* background: url(https://png.pngtree.com/element_origin_min_pic/16/09/05/1657cd2621cba13.jpg); */
+  /* background: url(https://cdn.dribbble.com/users/68746/screenshots/1443011/homework_dribbble.gif); */
+  background: url(https://cdn.dribbble.com/users/672882/screenshots/1933168/balloon_800x400.gif);
+  background-size: contain;   
   background-attachment: fixed;
-  background-position-x: -500px;
+  background-position-x: -400px;
 }
-
-/*-- Bootstrap Override Style --*/
-
 
 /*-- Content Style --*/
 .post-footer-option li{
